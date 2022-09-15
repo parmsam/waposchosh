@@ -10,3 +10,6 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/parmsam/waposhosh
 BugReports: https://github.com/parmsam/waposhosh/issues
+RoxygenNote: 7.2.1
+Imports: 
+    magrittr
