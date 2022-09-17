@@ -4,6 +4,8 @@
 # waposhosh
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/parmsam/waposhosh/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/parmsam/waposhosh/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Use R to access Washington Post School Shootings dataset. Provides

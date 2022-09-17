@@ -1,0 +1,52 @@
+name: refresh_data
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  schedule:
+    - cron: "30 1 1 * *"
+
+jobs:
+  generate-data:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: ubuntu-latest,   r: 'release'}
+
+    steps:
+      - uses: actions/checkout@v2 # Checkout branch into the runner
+      - uses: r-lib/actions/setup-r@master # Set up R runtime
+        with:
+          r-version: 'release'
+
+      - name: Cache R packages # Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+      - name: Run data_refresh script # Source data raw refresh script
+        run: |
+          source("data-raw/data_refresh.R")
+        shell: Rscript {0}
+
+      - name: Run data_load script # Source data load script
+        run: |
+          install.packages("dplyr")
+          install.packages("readr")
+          install.packages("stringr")
+          install.packages("magrittr")
+          source("data-raw/data_load.R")
+        shell: Rscript {0}
+
+      - name: Commit files # Commit changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add --all
+          git commit -m "refresh data"
+          git push
