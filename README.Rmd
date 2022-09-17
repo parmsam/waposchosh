@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# waposhosh - WIP 
+# waposhosh 
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -31,11 +31,25 @@ devtools::install_github("parmsam/waposhosh")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to interact with the dataset:
 
-```{r example}
-# library(waposhosh)
+```{r example, message = FALSE}
+library(waposhosh)
+library(dplyr)
 ## basic example code
+tail(schoolshootings, 4)
+```
+
+```{r glimpse, message = FALSE}
+glimpse(schoolshootings)
+```
+
+You can use latest_data() to get the latest dataset from the Washington Post [Github repo](https://github.com/washingtonpost/data-school-shootings).
+
+```{r latest, message = FALSE}
+# get latest data
+latest <- latest_data()
+tail(latest, 4)
 ```
 
 ## Credit

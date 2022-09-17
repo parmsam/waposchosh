@@ -1,0 +1,57 @@
+#' @title Washington Post School Shooting Raw Dataset
+#' @description The Washington Post has been compiling a database of every every act of gunfire at a primary or secondary school during school hours since the Columbine High massacre on April 20, 1999
+#' @format A data frame with 50 variables:
+#' \describe{
+#'   \item{\code{uid}}{double Unique identifier}
+#'   \item{\code{nces_school_id}}{character National Center for Education Statistics unique school ID}
+#'   \item{\code{school_name}}{character Name of school}
+#'   \item{\code{nces_district_id}}{character National Center for Education Statistics unique district ID}
+#'   \item{\code{district_name}}{character Name of school district}
+#'   \item{\code{date}}{double Date of shooting}
+#'   \item{\code{school_year}}{character School year of shooting}
+#'   \item{\code{year}}{double Year of shooting	}
+#'   \item{\code{time}}{double Approximate time of shooting	}
+#'   \item{\code{day_of_week}}{character Day of week of shooting}
+#'   \item{\code{city}}{character City where school is located	}
+#'   \item{\code{state}}{character State where school is located}
+#'   \item{\code{school_type}}{character Type of school (public or private)}
+#'   \item{\code{enrollment}}{double Enrollment at school at time of shooting}
+#'   \item{\code{killed}}{double Number killed in shooting (excludes shooter)}
+#'   \item{\code{injured}}{double Number injured in shooting (excludes shooter)}
+#'   \item{\code{casualties}}{double Number killed and injured in shooting (excludes shooter)}
+#'   \item{\code{shooting_type}}{character Type of shooting}
+#'   \item{\code{age_shooter1}}{double Age of first shooter}
+#'   \item{\code{gender_shooter1}}{character Gender of first shooter}
+#'   \item{\code{race_ethnicity_shooter1}}{character Race or ethnicity of first shooter}
+#'   \item{\code{shooter_relationship1}}{character First shooter's relationship to school}
+#'   \item{\code{shooter_deceased1}}{double Flag indicating whether first shooter died in shooting}
+#'   \item{\code{deceased_notes1}}{character If first shooter deceased, how first shooter died}
+#'   \item{\code{age_shooter2}}{double Age of second shooter}
+#'   \item{\code{gender_shooter2}}{character Gender of second shooter}
+#'   \item{\code{race_ethnicity_shooter2}}{character Race or ethnicity of second shooter}
+#'   \item{\code{shooter_relationship2}}{character Second shooter's relationship to school}
+#'   \item{\code{shooter_deceased2}}{double Flag indicating whether second shooter died in shooting}
+#'   \item{\code{deceased_notes2}}{character If second shooter deceased, how first shooter died}
+#'   \item{\code{white}}{double Enrollment of white students at time of shooting}
+#'   \item{\code{black}}{double Enrollment of black students at time of shooting}
+#'   \item{\code{hispanic}}{double Enrollment of Hispanic students at time of shooting}
+#'   \item{\code{asian}}{double Enrollment of Asian students at time of shooting}
+#'   \item{\code{american_indian_alaska_native}}{double Enrollment of American Indian and Alaskan native students at time of shooting}
+#'   \item{\code{hawaiian_native_pacific_islander}}{double Enrollment of Hawaiian native and Pacific islander students at time of shooting (unavailable prior to 2009)}
+#'   \item{\code{two_or_more}}{double Enrollment of students of two or more races at time of shooting (unavailable prior to 2009)}
+#'   \item{\code{resource_officer}}{double Flag indicating presence of school resource officer or security guard on school grounds at time of shooting}
+#'   \item{\code{weapon}}{character Weapon(s) used in shooting}
+#'   \item{\code{weapon_source}}{character Where shooter acquired weapon(s) used in shooting}
+#'   \item{\code{lat}}{double Latitude of school}
+#'   \item{\code{long}}{double Longitude of school}
+#'   \item{\code{staffing}}{double Full-time equivalent teachers at school at time of shooting}
+#'   \item{\code{low_grade}}{character Lowest grade-level offered by school}
+#'   \item{\code{high_grade}}{character Highest grade-level offered at time of shooting}
+#'   \item{\code{lunch}}{double Number of students at school eligible to receive a free or reduced-price lunch}
+#'   \item{\code{county}}{character County name where school is located}
+#'   \item{\code{state_fips}}{character Two-digit state Federal Information Processing Standards code}
+#'   \item{\code{county_fips}}{character Five-digit county Federal Information Processing Standards code}
+#'   \item{\code{ulocale}}{double National Center for Education Statistics urban-centric locale code}
+#'}
+#' @source \url{https://github.com/washingtonpost/data-school-shootings/}
+"schoolshootings"
