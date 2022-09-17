@@ -53,6 +53,10 @@ latest <- latest_data()
 tail(latest, 4)
 ```
 
+## Update Frequency 
+
+Note that the repo is scheduled to update the package data on a weekly basis. However, it will require a reinstall to pull the latest processed data (.rda) file. As an alternative, the `latest_data()` function will pull most current public dataset from the Washington Post.
+
 ## Credit
 Credit goes to the Washington Post and their research and reporting/database development team for compiling and sharing the dataset on their [Github repo](https://github.com/washingtonpost/data-school-shootings).
 

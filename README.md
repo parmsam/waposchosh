@@ -129,6 +129,13 @@ tail(latest, 4)
 #> #   shooter_relationship2 <chr>, shooter_deceased2 <dbl>, …
 ```
 
+## Update Frequency
+
+Note that the repo is scheduled to update the package data on a weekly
+basis. However, it will require a reinstall to pull the latest processed
+data (.rda) file. As an alternative, the `latest_data()` function will
+pull most current public dataset from the Washington Post.
+
 ## Credit
 
 Credit goes to the Washington Post and their research and
