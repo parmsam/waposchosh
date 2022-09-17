@@ -131,7 +131,7 @@ tail(latest, 4)
 
 ## Update Frequency
 
-Note that the repo is scheduled to update the package data on a weekly
+Note that the repo is scheduled to update the package data on a monthly
 basis. However, it will require a reinstall to pull the latest processed
 data (.rda) file. As an alternative, the `latest_data()` function will
 pull most current public dataset from the Washington Post.
@@ -148,3 +148,10 @@ repo](https://github.com/washingtonpost/data-school-shootings).
 The data was originally published under an
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 license.
+
+## Code of Conduct
+
+Please note that the waposhosh project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
