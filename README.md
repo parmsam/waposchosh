@@ -145,9 +145,11 @@ repo](https://github.com/washingtonpost/data-school-shootings).
 
 ### Note
 
-The data was originally published under an
-Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-license.
+The dataset was originally and is still published under an
+[Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
+4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/). The
+dataset in the package has been slightly cleaned and provided in an R
+data file format.
 
 ## Code of Conduct
 

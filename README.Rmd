@@ -58,10 +58,12 @@ tail(latest, 4)
 Note that the repo is scheduled to update the package data on a monthly basis. However, it will require a reinstall to pull the latest processed data (.rda) file. As an alternative, the `latest_data()` function will pull most current public dataset from the Washington Post.
 
 ## Credit
+
 Credit goes to the Washington Post and their research and reporting/database development team for compiling and sharing the dataset on their [Github repo](https://github.com/washingtonpost/data-school-shootings).
 
 ### Note
-The data was originally published under an Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
+
+The dataset was originally and is still published under an [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/). The dataset in the package has been slightly cleaned and provided in an R data file format.
 
 ## Code of Conduct
 
