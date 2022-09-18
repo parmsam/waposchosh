@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# waposhosh
+# waposchosh
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/parmsam/waposhosh/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/parmsam/waposhosh/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/parmsam/waposchosh/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/parmsam/waposchosh/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Use R to access Washington Post School Shootings dataset. Provides
@@ -14,12 +14,12 @@ generating findings.
 
 ## Installation
 
-You can install the development version of waposhosh from
+You can install the development version of waposchosh from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("parmsam/waposhosh")
+devtools::install_github("parmsam/waposchosh")
 ```
 
 ## Example
@@ -28,7 +28,7 @@ This is a basic example which shows you how to interact with the
 dataset:
 
 ``` r
-library(waposhosh)
+library(waposchosh)
 library(dplyr)
 ## basic example code
 tail(schoolshootings, 4)
@@ -151,7 +151,7 @@ license.
 
 ## Code of Conduct
 
-Please note that the waposhosh project is released with a [Contributor
+Please note that the waposchosh project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.

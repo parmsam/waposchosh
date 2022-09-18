@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(waposhosh)
+library(waposchosh)
 
-test_check("waposhosh")
+test_check("waposchosh")

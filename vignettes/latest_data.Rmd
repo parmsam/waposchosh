@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 This vignette is meant for those who want to get the latest data from the Washington Post Github repo.
 
 ```{r setup, message = FALSE}
-library(waposhosh)
+library(waposchosh)
 ```
 
 ## Usage

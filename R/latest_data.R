@@ -9,7 +9,7 @@
 #' latest_data()
 latest_data <- function(){
   # get package data
-  pkg_data <- waposhosh::schoolshootings
+  pkg_data <- waposchosh::schoolshootings
   # get current data from gh
   gh_url <- "https://raw.githubusercontent.com/washingtonpost/data-school-shootings/master/school-shootings-data.csv"
   # ensure consistent case on manner of death field
